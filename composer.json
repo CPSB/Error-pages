@@ -1,23 +1,24 @@
 {
-    "name": ":vendor/:package_name",
+    "name": "Tjoosten/ErrorPages",
     "type": "library",
-    "description": ":package_description",
+    "description": "Our error pages in Laravel applications",
     "keywords": [
-        ":vendor",
-        ":package_name"
+        "Tjoosten",
+        "ErrorPages"
     ],
-    "homepage": "https://github.com/:vendor/:package_name",
+    "homepage": "https://github.com/Tjoosten/ErrorPages",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Tim Joosten",
+            "email": "Topairy@gmail.com",
+            "homepage": "https://github.com/Tjoosten",
             "role": "Developer"
         }
     ],
     "require": {
-        "php" : "~5.6|~7.0"
+        "php": "~5.6|~7.0",
+        "illuminate/Support": "^5.5"
     },
     "require-dev": {
         "phpunit/phpunit" : ">=5.4.3",
@@ -25,22 +26,26 @@
     },
     "autoload": {
         "psr-4": {
-            ":vendor\\:package_name\\": "src"
+            "ActivismeBE\\ErrorPages\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\": "tests"
+            "ActivismeBE\\ErrorPages\\": "tests"
         }
     },
+
     "scripts": {
         "test": "phpunit",
-        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
-        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
     },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "ActivismeBe\\ErrorPages\\ProvidersServiceProvider"
+            ]
         }
     },
     "config": {

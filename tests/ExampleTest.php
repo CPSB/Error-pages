@@ -1,6 +1,6 @@
 <?php
 
-namespace League\Skeleton;
+namespace ActivismeBE\ErrorPages;
 
 class ExampleTest extends \PHPUnit\Framework\TestCase
 {
