@@ -1,5 +1,5 @@
 {
-    "name": "Tjoosten/ErrorPages",
+    "name": "activismebe/error-pages",
     "type": "library",
     "description": "Our error pages in Laravel applications",
     "keywords": [
